@@ -1,15 +1,35 @@
+
 *{
     margin: 0;
     padding: 0;
+
+
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav{
-    background-color: blue;
-    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+/* nav{
+    background-color: #37475A;
+    padding: 14px;
     z-index: 2;
     position: fixed;
     display: flex;
     width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+.naav{
+    padding-left: 230px;
 }
 
 a{
@@ -22,46 +42,233 @@ a{
 .menu-icon{
 
     display: none;
-}
+} */
 
 
 
+nav {
+    background-color: #37475A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+    color: lightgreen;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
 
-.main{
+
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100%;
-    background-image: url(./img/cyber-4431067_1280.jpg);
+    /* background-image: url(./img/cyber-4431067_1280.jpg); */
+    background-image: url(./img/abstract-5719221.jpg);
      background-repeat: no-repeat;
      background-size: cover;
 }
 
-@media only screen and (max-width: 600px) {
+.home-content{
+    /* margin-top: 140px; */
+    flex-wrap: wrap;
+    max-width: 820px;
+}
+
+.hed{
+    color: #000000;
+}
+
+.Headline{
+    font-size: 1.5rem;
+}
+
+.Description{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 27px;
+
+}
+
+.parag{
+    color: #000000;
+
+}
+
+.About{
+    height: 100vh;
+    width: 100%;
+    background-color: #d5e6ff;
+}
+
+.about-conent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-paragraph{
+    font-size: 1.2rem;
+    padding-top: 60px;
+    line-height: 37px;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    max-width: 820px;
+
+
+}
+
+
+
+#services {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+   
+}
+
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+
+}
+
+h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    align-items: center;
+}
+
+.service-card h3 {
+    color: #0073e6;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 1rem;
+}
+
+
+/* media */
+
+@media (max-width: 768px) {
+    .service-card {
+        display: inline-block;
+        width: 75%;
+        vertical-align: top;
+        margin-right: 5%;
+    }
+
+
+
     .main {
-      background-color: lightblue;
-      
-    }
+        background-color: lightblue;
+        
+      }
+  
 
+      nav{
+        position: fixed;
+        width: 95%;
 
+      }
+      .checkbtn {
+        display: block;
+        order: 1;
+        margin-right: 20px;
+      }
+    
+      ul {
+        position: fixed;
+        top: 50px;
+        right: -100%;
+        background-color: #37475A;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s;
+      }
 
+      ul li {
+        margin: 20px 0;
+      }
+    
+      ul li a {
+        font-size: 20px;
+      }
+    
+      #check:checked ~ ul {
+        right: 0;
+      }
 
-  }
-@media only screen and (max-width: 450px) {
-    .main {
-      background-color: rgb(255, 0, 0);
-
-    }
-
-    .menu-icon{
-
-        display: contents;
-    }
-
-    .naav{
+      #check:checked + .checkbtn + .nav-bar{
         display: none;
-    }
+    
+      }
+      
+  
+}
 
 
 
 
-  }
+
+
 
