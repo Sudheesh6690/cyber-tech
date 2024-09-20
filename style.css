@@ -17,12 +17,30 @@ body{
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #333;
     padding: 14px 20px;
     min-height: 40px;
     z-index: 2;
+    /* justify-content: flex-end; */
+
+
+}
+
+.logo{
+    display: flex;
+    margin-right: 110px;
+    
+}
+
+.logo-text{
+    color: #f8f9fa;
+}
+
+.nav{
+    display: flex;
+   
+    
 }
 .navbar .menu-icon{
     display: flex;
@@ -51,7 +69,7 @@ body{
     padding: 10px 15px;
     transition: background-color 0.3s ease;
     font-size: 18px;
-    border: 4px solid #333;
+    /* border: 4px solid #333; */
 }
 
 
@@ -233,23 +251,69 @@ body{
 }
 
 .Contact-form{
+
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 720px;
+    height: 700px;
+    width: 100%;
+
+}
+
+form{
+    background-color: #b9cbdd;
+    width: 320px;
+    height: 430px;
+    border-radius: 5px;
 
 }
 
 .contact-hed{
-    text-align: centerdx;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+label{
+    padding-left: 10px;
 }
 
 input{
     padding: 10px;
-    width: 550px;
-    margin: 10px;
+    width: 95%;
+    margin: 8px;
+    border: 0.5px;
+    border-radius: 5px;
 }
 
+.form-button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    padding: 8px;
+    width: 30%;
+    background-color: #007BFF;
+    border: none;
+    margin-top: 18px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.footer-content{
+    height: 40px;
+    width: 100%;
+    color: #dbdbdb;
+    background-color: #333;
+    font-size: 1.1rem;
+}
+
+.ff{
+    padding-top: 10px;
+    text-align: center;
+}
 
 /* Responsive Design */
 
@@ -294,7 +358,7 @@ input{
 
     .home-content{
         height: auto;
-        /* overflow: hidden; */
+        width: 90%;
 
     }
     .About{
@@ -329,11 +393,6 @@ input{
     }.navbar .naav input[type="checkbox"]:checked ~ label .fa-bars{
         display: none;
     }
- 
-    .contact-container  .img-container, .contact-container .form-container{
-        width: 270px;
-    }
-
 
    
 }
