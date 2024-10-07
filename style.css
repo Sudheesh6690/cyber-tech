@@ -171,7 +171,8 @@ body{
 }
 
 .about-content .btn:hover {
-  background-color: #0056b3;
+  background-color: green;
+  color: #fff;
 }
 
 .about-image {
@@ -270,12 +271,14 @@ form{
 
 .contact-hed{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6em;
+  font-weight: 700;
   padding: 12px;
 }
 
 label{
   padding-left: 10px;
+  font-size: 1.2rem;
 }
 
 input{
@@ -284,6 +287,7 @@ input{
   margin: 8px;
   border: 0.5px;
   border-radius: 5px;
+
 }
 
 .form-button{
@@ -292,14 +296,20 @@ input{
   justify-content: center;
 }
 
-.btn{
+.form-btn{
   padding: 8px;
-  width: 30%;
+  width: 10em;
   background-color: #007BFF;
   border: none;
   margin-top: 18px;
   align-items: center;
   border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.form-btn:hover{
+  background-color: green;
+  color: #fff;
 }
 
 .footer-content{
@@ -327,7 +337,6 @@ input{
 @media (max-width: 768px) {
   .container {
       flex-direction: column;
-      text-align: center;
   }
 
   .about-content, .about-image {
