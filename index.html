@@ -5,125 +5,137 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/214a1b0c3c.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>cyber-tech</title>
-
 </head>
 <body>
     <div class="container">
 
-    <header>
+        <header>
 
-        <!-- <div class="nav-bar navigation">
-            <nav>
-                <div class="menu-icon">     
-                <i class="fa-solid fa-bars"></i>
+            <div class="navbar">
+                <div class="logo">
+                    <h2 class="logo-text">CYBER-Tech</h2>
                 </div>
-                <div class="naav">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="">Contact</a>
+                
+                <!-- <nav> -->
+
+                <div class="nav">
+                    
+                    <div class="menu-icon">     
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="naav">
+                        <input type="checkbox" id="menuToggle">
+                    <label for="menuToggle" class="menu-icon"><i class="fa fa-bars" style="color: white;"></i>
+                        <i class="fa fa-close" style="color: white; "></i></label>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    <!-- </div> -->
+                </div>
+
+                </nav>
             </div>
-
-            </nav>
-        </div> -->
-
-
-
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">Cyber-tech</label>
-            <ul class="nav-bar">
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-        </nav>
         
-    </header>
+        </header>
 
     <div class="main-container">
 
-        <section id="home">
-           
-            <div class="home-container">
+            <section id="home">
+            
+                    <div class="home-container">
 
-                <div class="home-content">
-                <div class="Headline">
+                        <div class="home-content">
+                            
+                            <div class="Headline">
+                                <h2 class="hed">"Empowering the Future with Innovative Tech Solutions"</h2>
+                            </div>
 
-                    <h2 class="hed">"Empowering the Future with Innovative Tech Solutions"</h2>
+                            <div class="Description">
+                                <p class="parag">At Cyber Tech, we are at the forefront of technology innovation, providing cutting-edge solutions that drive businesses forward. From cybersecurity to cloud computing, our services are designed to empower companies with secure, scalable, and efficient technology that meets the demands of the digital age. We specialize in delivering customized tech strategies that boost performance, enhance security, and foster growth. Let Cyber Tech be your trusted partner in navigating the complexities of tomorrow's tech landscape today.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+            </section>
+
+            <section class="about-section">
+                <div class="about-container">
+                    <div class="about-content">
+                        <h1>About CyberTech</h1>
+                        <p>At CyberTech, we specialize in delivering cutting-edge cybersecurity solutions for businesses of all sizes. Our expert team ensures that your digital assets are protected 24/7 with the latest in technology and intelligence.</p>
+                        <p>From threat monitoring to secure cloud infrastructure, we provide a full range of services to safeguard your operations in today’s digital world. Trust CyberTech to be your shield in the ever-evolving cyber landscape.</p>
+                        <a href="#services" class="btn">Learn More</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="./img/abstract-5719221.jpg" alt="CyberTech team at work">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="services-section" id="services">
+                <div class="services-container">
+                    <h2>Our CyberTech Services</h2>
+                    <p>We provide a range of specialized cybersecurity services tailored to your business needs.</p>
+                    <div class="service-cards">
+                        <div class="card">
+                            <div class="icon">
+                                <img src="img/abstract-5719221.jpg" alt="Threat Monitoring Icon">
+                            </div>
+                            <h3>Threat Monitoring</h3>
+                            <p>Real-time monitoring of cyber threats to prevent attacks before they happen.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="img/abstract-5719221.jpg" alt="Secure Infrastructure Icon">
+                            </div>
+                            <h3>Secure Cloud Infrastructure</h3>
+                            <p>Ensure your cloud services are protected with multi-layer security solutions.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="img/abstract-5719221.jpg" alt="Vulnerability Assessment Icon">
+                            </div>
+                            <h3>Vulnerability Assessment</h3>
+                            <p>We assess and identify weak spots in your systems to safeguard your operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="Contact-form">
+                    <form action="">
+                        <div class="contact-hed">Contact</div>
+                        <label for="text">Name</label><br>
+                        <input type="text"><br>
+
+                        <label for="Gmail">Gmail</label><br>
+                        <input type="text"><br>
+
+                        <label for="tel">Phone</label><br>
+                        <input type="tel"><br>
+
+                        <label for="">Message </label><br>
+                        <input type="text"><br>
+                        <div class="form-button">   
+                        <button class="btn">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <p class="ff">CYBER-Tech@2024</p>
 
                 </div>
-
-                <div class="Description">
-                    <p class="parag">At Cyber Tech, we are at the forefront of technology innovation, providing cutting-edge solutions that drive businesses forward. From cybersecurity to cloud computing, our services are designed to empower companies with secure, scalable, and efficient technology that meets the demands of the digital age. We specialize in delivering customized tech strategies that boost performance, enhance security, and foster growth. Let Cyber Tech be your trusted partner in navigating the complexities of tomorrow's tech landscape today.</p>
-                </div>
-
-            </div>
-
-            </div>
-
-        </section>
-
-        <section id="about">
-
-
-
-            <div class="About">
-
-                <div class="about-conent">
-                    <div class="about-paragraph">
-                    <p>At Cyber Tech, we believe in the power of technology to transform businesses and drive innovation. Founded with a vision to deliver next-generation tech solutions, we specialize in a wide range of services, including cybersecurity, cloud computing, software development, and IT consulting.
-
-                        Our team of experts is dedicated to providing tailored solutions that meet the unique needs of each client, ensuring that businesses remain secure, efficient, and competitive in an ever-evolving digital landscape. We pride ourselves on our commitment to quality, security, and customer satisfaction, offering the tools and expertise to help your business thrive in the age of technology.
-
-Whether you're a startup looking to scale or an established enterprise seeking cutting-edge IT solutions, Cyber Tech is your trusted partner in innovation. Together, let’s build a future driven by smart, secure, and scalable technology.
-                    </p>
-                </div>
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-        <section id="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <p>At Cyber Tech, we provide a range of innovative tech solutions to meet your business needs.</p>
-                
-                <div class="service-card">
-                    <h3>Cybersecurity Solutions</h3>
-                    <p>Protect your business with advanced cybersecurity services. We offer real-time monitoring, threat detection, and defense strategies to keep your data safe.</p>
-                </div>
-    
-                <div class="service-card">
-                    <h3>Cloud Computing</h3>
-                    <p>Optimize your operations with scalable cloud solutions. From storage to computing power, we help you migrate and manage cloud infrastructure seamlessly.</p>
-                </div>
-    
-                <div class="service-card">
-                    <h3>Software Development</h3>
-                    <p>Custom software solutions designed to meet your unique business needs. We create efficient, scalable, and innovative software tailored for your success.</p>
-                </div>
-    
-                <div class="service-card">
-                    <h3>IT Consulting</h3>
-                    <p>Leverage our expertise with strategic IT consulting. We help you align technology with business goals, streamline processes, and implement cutting-edge systems.</p>
-                </div>
-            </div>
-        </section>
-
-           
-           
-
+            </footer>
     </div>
 
 </div>
